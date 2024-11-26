@@ -16,11 +16,11 @@ tracktocoord = pd.read_excel(tracktocoord_file)
 racedata = racedata.merge(tracktocoord, on="Track", how="left")
 
 # Open a CSV file to write results
-output_file = 'weather_new.csv'
+output_file = 'weather_new2.csv'
 header_written = False  # Track if we've written the CSV header
 
 # Retry function
-def fetch_with_retries(latitude, longitude, start, end, step=0.05, range_limit=0.5):
+def fetch_with_retries(latitude, longitude, start, end, step=0.05, range_limit=0.25):
     for delta_lat in np.arange(-range_limit, range_limit + step, step):
         for delta_lng in np.arange(-range_limit, range_limit + step, step):
             try:
