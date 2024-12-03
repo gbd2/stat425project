@@ -1,0 +1,18 @@
+model {
+  # Likelihood
+  for (i in 1:N){
+     y[i] ~ dbin(p[i], n[i])
+  }
+  
+  # Priors
+  for (i in 1:N){
+     p[i] ~ dbeta(a, b)
+  }
+  
+  # Hyperpriors
+  a <- mu*eta
+  b <- (1-mu)*eta
+  mu ~ dbeta(mua, mub)
+  eta <- exp(logeta)
+  logeta ~ dlogis(logn, 1)
+}

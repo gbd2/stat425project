@@ -1,0 +1,534 @@
+Season,Site,Toyota,Ford,Chevrolet
+2007,Daytona,0,1,4
+2007,Fontana,0,1,4
+2007,Las Vegas,0,1,4
+2007,Atlanta,0,1,3
+2007,Bristol,0,1,4
+2007,Martinsville,0,0,5
+2007,Fort Worth,0,2,3
+2007,Phoenix,0,1,4
+2007,Talladega,0,2,2
+2007,Richmond,0,0,4
+2007,Charlotte,1,0,2
+2007,Pocono,0,0,4
+2007,Michigan,0,1,4
+2007,Sonoma,0,1,3
+2007,Loudon,0,0,5
+2007,Chicago,0,2,3
+2007,Indianapolis,0,0,3
+2007,Pocono,0,0,4
+2007,Watkins Glen,0,1,4
+2007,Bristol,0,1,3
+2007,Fontana,0,1,4
+2007,Richmond,0,1,4
+2007,Loudon,0,0,5
+2007,Dover,0,2,3
+2007,Kansas,0,1,4
+2007,Talladega,1,0,3
+2007,Charlotte,0,1,4
+2007,Martinsville,0,1,3
+2007,Atlanta,0,2,2
+2007,Fort Worth,0,1,3
+2007,Phoenix,0,2,2
+2007,Homestead,0,2,2
+2008,Daytona,2,0,0
+2008,Fontana,1,2,2
+2008,Las Vegas,0,2,3
+2008,Atlanta,2,1,2
+2008,Martinsville,2,0,3
+2008,Fort Worth,2,1,1
+2008,Phoenix,1,1,3
+2008,Talladega,3,1,0
+2008,Richmond,2,0,3
+2008,Darlington,1,2,2
+2008,Charlotte,1,1,2
+2008,Dover,1,3,1
+2008,Michigan,2,1,1
+2008,Sonoma,1,1,3
+2008,Daytona,1,3,0
+2008,Chicago,2,1,2
+2008,Indianapolis,1,1,2
+2008,Pocono,1,2,2
+2008,Watkins Glen,2,1,1
+2008,Michigan,1,4,0
+2008,Bristol,2,1,2
+2008,Fontana,1,2,2
+2008,Richmond,2,0,3
+2008,Loudon,0,2,3
+2008,Dover,0,3,2
+2008,Kansas,0,3,2
+2008,Talladega,1,1,3
+2008,Charlotte,1,1,1
+2008,Martinsville,1,1,3
+2008,Atlanta,2,2,1
+2008,Fort Worth,0,3,2
+2008,Phoenix,1,2,1
+2008,Homestead,0,2,3
+2009,Daytona,0,1,2
+2009,Fontana,1,2,1
+2009,Las Vegas,2,1,2
+2009,Atlanta,1,1,2
+2009,Bristol,2,0,2
+2009,Fort Worth,0,2,3
+2009,Phoenix,0,1,3
+2009,Talladega,2,0,3
+2009,Richmond,1,0,4
+2009,Darlington,0,0,5
+2009,Charlotte,3,1,1
+2009,Dover,0,2,2
+2009,Pocono,1,1,3
+2009,Michigan,1,2,2
+2009,Sonoma,2,0,2
+2009,Loudon,2,0,2
+2009,Daytona,1,1,2
+2009,Chicago,1,0,3
+2009,Indianapolis,1,1,3
+2009,Pocono,1,0,2
+2009,Watkins Glen,2,2,1
+2009,Michigan,1,1,2
+2009,Bristol,3,1,1
+2009,Atlanta,1,0,3
+2009,Richmond,2,0,2
+2009,Loudon,2,0,3
+2009,Kansas,1,1,3
+2009,Fontana,0,0,5
+2009,Charlotte,1,1,2
+2009,Martinsville,2,0,3
+2009,Talladega,1,2,1
+2009,Fort Worth,1,1,2
+2009,Phoenix,1,0,4
+2009,Homestead,1,0,3
+2010,Daytona,1,1,3
+2010,Fontana,1,0,4
+2010,Las Vegas,0,1,4
+2010,Atlanta,0,3,1
+2010,Bristol,0,2,2
+2010,Phoenix,0,0,5
+2010,Richmond,1,1,3
+2010,Darlington,1,0,3
+2010,Dover,3,1,1
+2010,Pocono,2,0,3
+2010,Michigan,1,1,2
+2010,Sonoma,1,1,3
+2010,Loudon,0,0,4
+2010,Daytona,0,1,4
+2010,Chicago,1,1,3
+2010,Indianapolis,0,1,4
+2010,Pocono,1,2,2
+2010,Watkins Glen,1,2,1
+2010,Michigan,1,3,1
+2010,Atlanta,1,1,3
+2010,Richmond,4,0,1
+2010,Loudon,1,0,4
+2010,Dover,1,1,2
+2010,Kansas,0,1,4
+2010,Fontana,0,1,4
+2010,Charlotte,2,1,2
+2010,Martinsville,2,0,3
+2010,Talladega,2,0,3
+2010,Fort Worth,2,2,1
+2010,Phoenix,1,2,2
+2010,Homestead,0,3,2
+2011,Daytona,1,3,0
+2011,Phoenix,1,0,4
+2011,Las Vegas,0,2,3
+2011,Fontana,1,1,3
+2011,Martinsville,1,0,4
+2011,Fort Worth,0,3,2
+2011,Talladega,0,0,5
+2011,Richmond,3,2,0
+2011,Darlington,1,1,2
+2011,Dover,2,2,1
+2011,Charlotte,1,2,1
+2011,Kansas,1,1,2
+2011,Pocono,1,0,3
+2011,Michigan,2,2,1
+2011,Sonoma,0,2,2
+2011,Daytona,3,2,0
+2011,Kentucky,2,1,2
+2011,Loudon,2,0,3
+2011,Indianapolis,0,1,4
+2011,Watkins Glen,3,1,0
+2011,Michigan,1,0,3
+2011,Richmond,0,2,2
+2011,Loudon,1,1,2
+2011,Dover,1,2,1
+2011,Kansas,1,2,1
+2011,Charlotte,2,3,0
+2011,Talladega,1,0,3
+2011,Martinsville,1,0,4
+2011,Fort Worth,1,3,1
+2011,Phoenix,1,1,3
+2011,Homestead,1,2,2
+2012,Phoenix,1,1,2
+2012,Las Vegas,0,2,3
+2012,Fontana,1,1,3
+2012,Martinsville,1,1,2
+2012,Fort Worth,1,2,2
+2012,Kansas,2,2,1
+2012,Richmond,2,0,3
+2012,Talladega,1,2,1
+2012,Darlington,3,0,2
+2012,Charlotte,2,1,1
+2012,Dover,1,1,3
+2012,Pocono,3,0,2
+2012,Michigan,0,2,3
+2012,Sonoma,2,0,3
+2012,Kentucky,1,0,3
+2012,Daytona,1,1,3
+2012,Loudon,2,0,2
+2012,Indianapolis,1,1,3
+2012,Pocono,1,0,3
+2012,Watkins Glen,1,1,1
+2012,Michigan,0,2,2
+2012,Atlanta,2,0,2
+2012,Richmond,2,1,2
+2012,Chicago,1,0,3
+2012,Loudon,2,0,3
+2012,Dover,1,1,2
+2012,Talladega,1,2,2
+2012,Charlotte,3,1,1
+2012,Kansas,1,1,3
+2012,Martinsville,2,1,2
+2012,Fort Worth,1,1,2
+2012,Phoenix,2,0,3
+2012,Homestead,2,1,2
+2013,Daytona,1,1,3
+2013,Phoenix,1,2,2
+2013,Las Vegas,2,2,1
+2013,Fontana,1,2,2
+2013,Martinsville,2,0,3
+2013,Fort Worth,2,3,0
+2013,Kansas,3,0,2
+2013,Richmond,1,1,3
+2013,Talladega,1,3,1
+2013,Darlington,2,0,3
+2013,Charlotte,1,1,3
+2013,Dover,1,1,3
+2013,Pocono,0,1,4
+2013,Michigan,2,1,2
+2013,Sonoma,2,1,2
+2013,Kentucky,3,1,1
+2013,Daytona,2,0,3
+2013,Loudon,2,2,1
+2013,Indianapolis,1,0,4
+2013,Michigan,1,1,3
+2013,Atlanta,2,1,2
+2013,Richmond,0,1,4
+2013,Chicago,2,0,3
+2013,Loudon,2,1,2
+2013,Dover,1,1,3
+2013,Kansas,0,2,3
+2013,Charlotte,2,1,2
+2013,Talladega,1,1,3
+2013,Martinsville,2,1,2
+2013,Fort Worth,1,1,3
+2013,Phoenix,0,0,5
+2013,Homestead,4,0,1
+2014,Daytona,1,1,3
+2014,Las Vegas,0,3,2
+2014,Fontana,2,0,3
+2014,Martinsville,0,2,3
+2014,Darlington,1,1,3
+2014,Richmond,2,2,1
+2014,Talladega,3,1,1
+2014,Kansas,0,1,4
+2014,Charlotte,1,1,3
+2014,Pocono,1,1,3
+2014,Michigan,0,1,4
+2014,Sonoma,0,1,4
+2014,Kentucky,2,1,2
+2014,Loudon,2,1,2
+2014,Pocono,1,2,2
+2014,Watkins Glen,0,2,3
+2014,Michigan,0,1,4
+2014,Atlanta,2,1,2
+2014,Richmond,1,1,3
+2014,Chicago,0,2,3
+2014,Loudon,0,1,4
+2014,Dover,1,2,2
+2014,Kansas,1,2,2
+2014,Charlotte,1,1,3
+2014,Talladega,2,1,2
+2014,Martinsville,0,1,4
+2014,Fort Worth,1,1,3
+2014,Phoenix,2,1,2
+2014,Homestead,0,1,4
+2015,Daytona,1,1,3
+2015,Atlanta,1,1,3
+2015,Las Vegas,1,0,4
+2015,Phoenix,0,0,5
+2015,Fontana,0,1,4
+2015,Martinsville,3,2,0
+2015,Fort Worth,0,2,3
+2015,Talladega,0,1,4
+2015,Kansas,0,1,4
+2015,Charlotte,2,1,2
+2015,Dover,0,1,4
+2015,Pocono,0,1,4
+2015,Michigan,1,1,3
+2015,Sonoma,2,1,2
+2015,Loudon,1,2,2
+2015,Indianapolis,2,1,2
+2015,Pocono,1,2,2
+2015,Watkins Glen,2,1,2
+2015,Michigan,2,0,3
+2015,Darlington,2,2,1
+2015,Richmond,2,2,1
+2015,Chicago,3,0,2
+2015,Loudon,3,2,0
+2015,Dover,1,1,3
+2015,Kansas,2,1,2
+2015,Talladega,1,2,2
+2015,Martinsville,2,0,3
+2015,Fort Worth,2,1,2
+2015,Phoenix,1,1,3
+2016,Daytona,4,0,1
+2016,Atlanta,2,0,3
+2016,Las Vegas,1,2,2
+2016,Phoenix,3,0,2
+2016,Fontana,1,2,2
+2016,Martinsville,1,1,3
+2016,Fort Worth,1,1,3
+2016,Richmond,2,0,3
+2016,Talladega,1,1,3
+2016,Kansas,2,1,2
+2016,Charlotte,2,1,2
+2016,Pocono,0,2,3
+2016,Michigan,0,2,3
+2016,Sonoma,3,1,1
+2016,Daytona,1,4,0
+2016,Kentucky,1,1,3
+2016,Loudon,1,2,2
+2016,Indianapolis,3,0,2
+2016,Watkins Glen,1,2,2
+2016,Michigan,0,2,3
+2016,Darlington,2,1,2
+2016,Richmond,2,1,2
+2016,Chicago,1,3,1
+2016,Loudon,2,1,2
+2016,Dover,3,1,1
+2016,Charlotte,1,0,4
+2016,Kansas,2,1,2
+2016,Talladega,1,3,1
+2016,Martinsville,3,1,1
+2016,Fort Worth,3,1,1
+2016,Phoenix,1,1,3
+2016,Homestead,0,1,4
+2017,Daytona,0,3,2
+2017,Atlanta,1,1,3
+2017,Las Vegas,1,2,2
+2017,Phoenix,1,2,2
+2017,Fontana,1,3,1
+2017,Martinsville,1,2,2
+2017,Fort Worth,0,2,3
+2017,Richmond,1,4,0
+2017,Talladega,1,2,2
+2017,Kansas,2,3,0
+2017,Charlotte,4,0,1
+2017,Dover,1,0,4
+2017,Pocono,1,4,0
+2017,Michigan,1,1,3
+2017,Sonoma,2,3,0
+2017,Daytona,0,2,3
+2017,Kentucky,3,0,2
+2017,Loudon,3,1,1
+2017,Indianapolis,1,2,2
+2017,Pocono,3,2,0
+2017,Watkins Glen,4,1,0
+2017,Michigan,2,1,2
+2017,Darlington,3,1,1
+2017,Richmond,1,2,2
+2017,Chicago,2,1,2
+2017,Loudon,3,1,1
+2017,Dover,2,0,3
+2017,Charlotte,2,1,2
+2017,Talladega,0,4,1
+2017,Martinsville,2,3,0
+2017,Fort Worth,3,2,0
+2017,Phoenix,3,1,1
+2017,Homestead,2,1,2
+2018,Daytona,1,1,3
+2018,Atlanta,2,3,0
+2018,Las Vegas,2,2,1
+2018,Fontana,2,2,1
+2018,Martinsville,2,3,0
+2018,Fort Worth,2,2,1
+2018,Richmond,2,2,1
+2018,Talladega,0,4,1
+2018,Dover,2,3,0
+2018,Kansas,2,2,1
+2018,Charlotte,3,1,1
+2018,Pocono,2,2,1
+2018,Sonoma,2,2,1
+2018,Chicago,2,2,1
+2018,Daytona,2,0,3
+2018,Kentucky,2,3,0
+2018,Loudon,2,2,1
+2018,Pocono,3,1,1
+2018,Watkins Glen,4,0,1
+2018,Michigan,1,3,1
+2018,Darlington,0,3,2
+2018,Indianapolis,2,3,0
+2018,Las Vegas,1,3,1
+2018,Richmond,2,2,1
+2018,Charlotte (Road),0,3,2
+2018,Dover,2,2,1
+2018,Talladega,1,4,0
+2018,Kansas,3,0,2
+2018,Martinsville,3,2,0
+2018,Fort Worth,1,3,1
+2018,Phoenix,1,3,1
+2018,Homestead,2,3,0
+2019,Daytona,3,2,0
+2019,Atlanta,1,3,1
+2019,Las Vegas,1,3,1
+2019,Phoenix,3,2,0
+2019,Fontana,1,4,0
+2019,Martinsville,2,2,1
+2019,Fort Worth,2,2,1
+2019,Talladega,0,1,4
+2019,Dover,1,1,3
+2019,Kansas,1,2,2
+2019,Charlotte,2,2,1
+2019,Pocono,2,2,1
+2019,Sonoma,4,1,0
+2019,Chicago,0,2,3
+2019,Kentucky,3,0,2
+2019,Loudon,3,2,0
+2019,Pocono,3,0,2
+2019,Watkins Glen,3,1,1
+2019,Michigan,2,2,1
+2019,Darlington,2,2,1
+2019,Indianapolis,0,3,2
+2019,Las Vegas,1,3,1
+2019,Richmond,3,2,0
+2019,Charlotte (Road),0,3,2
+2019,Dover,2,1,2
+2019,Kansas,2,0,3
+2019,Martinsville,2,2,1
+2019,Fort Worth,0,4,1
+2019,Phoenix,2,2,1
+2019,Homestead,3,2,0
+2020,Daytona,1,4,0
+2020,Fontana,1,1,3
+2020,Phoenix,1,3,1
+2020,Darlington,1,1,3
+2020,Charlotte,1,3,1
+2020,Atlanta,3,2,0
+2020,Martinsville,1,3,1
+2020,Homestead,1,2,2
+2020,Talladega,2,2,1
+2020,Pocono,3,2,0
+2020,Pocono,2,2,1
+2020,Indianapolis,0,4,1
+2020,Kentucky,1,3,1
+2020,Fort Worth,1,2,2
+2020,Kansas,3,2,0
+2020,Loudon,2,3,0
+2020,Michigan,2,3,0
+2020,Michigan,3,2,0
+2020,Daytona (Road),2,1,2
+2020,Dover,3,1,1
+2020,Dover,1,1,3
+2020,Daytona,2,0,3
+2020,Darlington,1,2,2
+2020,Richmond,1,2,2
+2020,Las Vegas,2,1,2
+2020,Talladega,2,0,3
+2020,Charlotte (Road),1,2,2
+2020,Kansas,1,3,1
+2020,Fort Worth,3,1,1
+2020,Martinsville,0,3,2
+2020,Phoenix,1,2,2
+2021,Daytona,1,2,2
+2021,Daytona (Road),2,2,1
+2021,Homestead,1,1,3
+2021,Las Vegas,2,2,1
+2021,Phoenix,2,2,1
+2021,Atlanta,2,1,2
+2021,Bristol (Dirt),1,2,2
+2021,Richmond,3,1,1
+2021,Kansas,1,3,1
+2021,Darlington,3,0,2
+2021,Dover,0,1,4
+2021,Austin,0,1,4
+2021,Sonoma,2,1,2
+2021,Nashville,0,2,3
+2021,Pocono,2,1,2
+2021,Pocono,2,2,1
+2021,Elkhart Lake,3,0,2
+2021,Atlanta,2,1,2
+2021,Loudon,1,4,0
+2021,Watkins Glen,3,0,2
+2021,Indianapolis G.P.,0,2,3
+2021,Michigan,1,1,3
+2021,Daytona,1,2,2
+2021,Darlington,2,1,2
+2021,Richmond,3,1,1
+2021,Bristol,0,2,3
+2021,Las Vegas,3,1,1
+2021,Charlotte (Road),2,1,2
+2021,Fort Worth,1,2,2
+2021,Kansas,1,1,3
+2021,Martinsville,2,1,2
+2021,Phoenix,2,1,2
+2022,Daytona,1,4,0
+2022,Fontana,0,1,4
+2022,Las Vegas,1,0,4
+2022,Phoenix,1,2,2
+2022,Atlanta,1,0,4
+2022,Austin,1,0,4
+2022,Richmond,2,1,2
+2022,Bristol (Dirt),1,2,2
+2022,Talladega,2,0,3
+2022,Dover,1,0,4
+2022,Kansas,4,0,1
+2022,Charlotte,3,2,0
+2022,Gateway,2,3,0
+2022,Sonoma,0,4,1
+2022,Nashville,1,1,3
+2022,Atlanta,0,2,3
+2022,Loudon,3,1,1
+2022,Pocono,1,0,4
+2022,Indianapolis G.P.,1,3,1
+2022,Michigan,2,3,0
+2022,Richmond,2,2,1
+2022,Bristol,1,1,3
+2022,Fort Worth,0,3,2
+2022,Talladega,1,2,2
+2022,Charlotte (Road),2,1,2
+2022,Las Vegas,2,2,1
+2022,Homestead,0,1,4
+2022,Martinsville,2,1,2
+2022,Phoenix,0,4,1
+2023,Daytona,1,2,2
+2023,Las Vegas,2,0,3
+2023,Phoenix,1,2,2
+2023,Atlanta,2,2,1
+2023,Austin,1,0,4
+2023,Richmond,1,1,3
+2023,Martinsville,2,2,1
+2023,Talladega,0,4,1
+2023,Kansas,2,0,3
+2023,Darlington,1,2,2
+2023,Gateway,2,1,2
+2023,Sonoma,1,2,2
+2023,Nashville,2,0,3
+2023,Atlanta,0,1,4
+2023,Pocono,4,1,0
+2023,Richmond,1,3,1
+2023,Michigan,2,2,1
+2023,Indianapolis G.P.,1,1,3
+2023,Watkins Glen,3,0,2
+2023,Daytona,0,4,1
+2023,Darlington,1,1,3
+2023,Kansas,2,1,2
+2023,Bristol,3,1,1
+2023,Fort Worth,3,0,2
+2023,Talladega,1,2,2
+2023,Charlotte (Road),1,1,3
+2023,Las Vegas,1,1,3
+2023,Homestead,2,1,2
+2023,Martinsville,1,4,0
+2023,Phoenix,0,2,3
