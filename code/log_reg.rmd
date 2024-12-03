@@ -1,0 +1,83 @@
+```{r}
+library(readxl)
+library(dplyr)
+library(lubridate)
+
+weather <- read.csv("data/weather_final.csv")
+weather$Date <- as.Date(weather$date)
+weather <- weather %>% arrange(Date)
+
+racedate <- read_excel("data/racedate.xlsx")
+race_summary <- read.csv("data/race_summary.csv")
+
+racedate <- subset(racedate, Season >= 1992)
+racedate <- racedate %>%
+  mutate(Date = make_date(Season, month(Date), day(Date)))
+racedate <- racedate %>% arrange(Date)
+
+merged_df <- cbind(racedate, race_summary)
+
+final_merged_df <- merged_df %>%
+  right_join(weather, by = "Date")
+
+final_merged_df <- final_merged_df %>%
+  select(track_length, temp, dwpt, rhum,
+         prcp, wspd, coco, rain_binary, shortened)
+
+final_merged_df$rain_binary <- ifelse(final_merged_df$rain == "True", 1, 0)
+final_merged_df$shortened <- ifelse(final_merged_df$shortened == "True", 1, 0)
+final_merged_df$coco <- recode(final_merged_df$coco,
+                               "No Rain" = 0,
+                               "Light Rain" = 1,
+                               "Moderate Rain" = 2,
+                               "Heavy Rain" = 3,
+                               .default = NA_real_)
+head(final_merged_df)
+```
+
+
+```{r}
+library(rjags)
+library(R2jags)
+library(dplyr)
+
+y <- as.vector(final_merged_df$shortened)
+X <- as.matrix(final_merged_df %>% select(track_length, temp, dwpt, rhum, prcp, wspd, coco, rain_binary))
+N <- length(y)
+K <- ncol(X)
+
+modelString <- "
+model {
+  # Likelihood
+  for (i in 1:N) {
+    y[i] ~ dbern(p[i])
+    logit(p[i]) <- beta0 + inprod(beta[1:K], X[i,])
+  }
+  
+  # Priors
+  beta0 ~ dnorm(0, 0.001)
+  for (j in 1:K) {
+    beta[j] ~ dnorm(0, 0.001)
+  }
+}
+"
+
+the_data <- list(
+  y = y,
+  X = X,
+  N = N,
+  K = K
+)
+
+params <- c("beta0", "beta")
+
+posterior <- jags(
+  data = the_data,
+  parameters.to.save = params,
+  model.file = textConnection(modelString),
+  n.chains = 3,
+  n.iter = 10000,
+  n.burnin = 5000,
+  n.thin = 2
+)
+```
