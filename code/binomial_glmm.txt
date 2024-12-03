@@ -1,0 +1,14 @@
+model{
+    # Likelihood
+    for(i in 1:N) { 
+      y[i] ~ dbin(p[i], 5)
+      logit(p[i]) <- mu[i]
+      mu[i] <- inprod(X[i, ], theta) + inprod(X[i, ], gamma[groups[i], ])
+    }     
+
+    # Priors
+    theta ~ dmnorm(mu.theta, tau.theta)
+    for(j in 1:M){
+      gamma[j, 1:6] ~ dmnorm(mu.gamma, tau.gamma)
+    }
+}
