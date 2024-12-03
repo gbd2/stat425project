@@ -1,0 +1,83 @@
+---
+title: "HLM for NASCAR Data"
+author: Gavin Daves, Abbas Shakih
+output: html_notebook
+---
+
+
+```{r}
+library('R2jags')
+
+# Change to your file path
+regression.data <- read.csv("C:/Users/gbd20/Downloads/manufacturer_regression_data.csv", header = TRUE)
+
+N <- nrow(regression.data)
+M <- 3
+y <- regression.data$top5_count
+groups <- as.integer(factor(regression.data$manufacturer))
+X <- as.matrix(regression.data[,1:5])
+
+min_max_norm <- function(x) {
+  (x - min(x)) / (max(x) - min(x))
+}
+
+X <- cbind(1, apply(X, 2, min_max_norm))
+
+
+mu <- rep(0, ncol(X))
+tau <- diag(0.001, ncol(X))
+
+jagsData <- list(
+  y = y,
+  X = X,
+  N = N,
+  M = M,
+  groups = groups,
+  mu.theta = mu,
+  mu.gamma = mu,
+  tau.theta = tau,
+  tau.gamma = tau
+)
+
+parameters <- c("theta", "gamma")
+
+model <- "
+  model{
+    # Likelihood
+    for(i in 1:N) { 
+      y[i] ~ dbin(p[i], 5)
+      logit(p[i]) <- mu[i]
+      mu[i] <- inprod(X[i, ], theta) + inprod(X[i, ], gamma[groups[i], ])
+    }     
+
+    # Priors
+    theta ~ dmnorm(mu.theta, tau.theta)
+    for(j in 1:M){
+      gamma[j, 1:6] ~ dmnorm(mu.gamma, tau.gamma)
+    }
+}
+"
+
+jags <- jags(data = jagsData, 
+              parameters.to.save = parameters, 
+            model.file = textConnection(model), 
+              n.chains=3,
+              n.iter = 20000, 
+            n.burnin = 5000, 
+            n.thin = 5)
+
+mcmc_results <- as.mcmc(jags)
+```
+
+```{r}
+gelman.diag(mcmc_results)
+```
+
+```{r}
+effectiveSize(mcmc_results)
+```
+
+```{r}
+par(mar=c(1,1,1,1))
+plot(mcmc_results)
+```
