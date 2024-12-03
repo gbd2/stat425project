@@ -42,7 +42,7 @@ library(R2jags)
 library(dplyr)
 
 y <- as.vector(final_merged_df$shortened)
-X <- as.matrix(final_merged_df %>% select(track_length, temp, dwpt, rhum, prcp, wspd, coco, rain_binary))
+X <- as.matrix(final_merged_df %>% select(temp, prcp, wspd))
 N <- length(y)
 K <- ncol(X)
 
@@ -50,34 +50,26 @@ modelString <- "
 model {
   # Likelihood
   for (i in 1:N) {
+    logit(p[i]) <- b0 + bTemp * temp[i] + bPrcp * prcp[i] + bWspd * wspd[i]
     y[i] ~ dbern(p[i])
-    logit(p[i]) <- beta0 + inprod(beta[1:K], X[i,])
   }
-  
-  # Priors
-  beta0 ~ dnorm(0, 0.001)
-  for (j in 1:K) {
-    beta[j] ~ dnorm(0, 0.001)
-  }
+  p0 ~ dbeta(1, 1)
+  b0 <- logit(p0)
+  bPrcp ~ dunif(-10, 10)
+  bTemp ~ dunif(-10, 10)
+  bWspd ~ dunif(-10, 10)
 }
 "
 
-the_data <- list(
-  y = y,
-  X = X,
-  N = N,
-  K = K
-)
+the_data <- list(N = N, y = y,
+    temp = final_merged_df$temp, prcp = final_merged_df$prcp, wspd = final_merged_df$wspd)
 
-params <- c("beta0", "beta")
+params <- c("bTemp", "bPrcp", "bWspd", "p0")
 
-posterior <- jags(
-  data = the_data,
-  parameters.to.save = params,
-  model.file = textConnection(modelString),
-  n.chains = 3,
-  n.iter = 10000,
-  n.burnin = 5000,
-  n.thin = 2
-)
+library(jagsUI)
+posterior <- jags(the_data, NULL, parameters.to.save = params, 
+                  model.file = textConnection(modelString),
+                  n.chains=3, n.iter=10000,  n.burnin = 5000, n.thin = 2)
+
+
 ```
