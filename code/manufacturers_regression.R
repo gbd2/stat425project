@@ -1,7 +1,7 @@
 library(rjags)
 library(coda)
 
-setwd("C:/Users/mathw/OneDrive/Desktop/College/Classes/Fall 24/STAT 425/stat425project")
+setwd("")
 regression.data <- read.csv("data/manufacturer_regression_data.csv", header = TRUE)
 
 N <- nrow(regression.data)
@@ -16,11 +16,10 @@ min_max_norm <- function(x) {
   (x - min(x)) / (max(x) - min(x))
 }
 
-# X <- cbind(1, apply(X, 2, min_max_norm))
-X <- cbind(1, X)
+X <- cbind(1, apply(X, 2, min_max_norm))
 
 mu <- rep(0, ncol(X))
-tau <- diag(0.0001, ncol(X))
+tau <- diag(0.1, ncol(X))
 
 jagsData <- list(
   y = y,
@@ -34,12 +33,9 @@ jagsData <- list(
   tau.gamma = tau
 )
 
-model <- jags.model(file = "code/binomial_glmm.txt", data = jagsData, n.chains=1)
-result <- coda.samples(model, variable.names = c("theta", "gamma"), n.iter=1e4, n.burnin=1e3)
-
+model <- jags.model(file = "code/binomial_glmm.txt", data = jagsData, n.chains=3)
+result <- coda.samples(model, variable.names = c("theta", "gamma"), n.iter = 20000, n.burnin = 5000, n.thin = 5)
 
 summary(result)
-
-for (i in 1:ncol(X)){
-  plot(result[,i], main = colnames(X)[i])
-}
+plot(result)
+gelman.diag(result)
