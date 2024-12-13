@@ -9,6 +9,6 @@ model{
     # Priors
     theta ~ dmnorm(mu.theta, tau.theta)
     for(j in 1:M){
-      gamma[j, 1:6] ~ dmnorm(mu.gamma, tau.gamma)
+      gamma[j, 1:13] ~ dmnorm(mu.gamma, tau.gamma)
     }
 }
